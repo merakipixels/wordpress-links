@@ -17,8 +17,18 @@
 
 [White Label CMS](https://wordpress.org/plugins/white-label-cms/) - Branding Client Wordpress Site.
 
+[Insert Headers and Footers](https://wordpress.org/plugins/insert-headers-and-footers/) - used to insert any code snippet in header or footer like google analytics or so.
 
 
+**Installing Google Analytics to the theme’s functions.php file.**
 
-
+~~~~
+<?php
+add_action('wp_head', 'wpb_add_googleanalytics');
+function wpb_add_googleanalytics() { ?>
+ 
+// Paste your Google Analytics tracking code from Step 4 here
+ 
+<?php } ?>
+~~~~
 
